@@ -5,7 +5,7 @@
         error_log("We are pulling the master branch");
         //chdir("/home/iancu/apps/hotel-php-lab-backend");
         error_log(exec("whoami"));
-        exec("git -C /home/iancu/apps/hotel-php-lab-backend pull origin master");
+        error_log("Result:".exec("git -C /home/iancu/apps/hotel-php-lab-backend pull origin master"));
         
     }
 ?>
