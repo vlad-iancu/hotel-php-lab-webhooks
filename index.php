@@ -6,7 +6,7 @@
         //chdir("/home/iancu/apps/hotel-php-lab-backend");
         error_log(exec("whoami"));
         $output = array();
-        exec("git -C /home/iancu/apps/hotel-php-lab-backend pull origin master",$output);
+        shell_exec("git -C /home/iancu/apps/hotel-php-lab-backend pull origin master");
         error_log(var_dump($output));
         
     }
