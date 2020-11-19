@@ -7,7 +7,7 @@
         error_log(exec("whoami"));
         $output = array();
         exec("git -C /home/iancu/apps/hotel-php-lab-backend pull origin master",$output);
-        error_log($output);
+        error_log(var_dump($output));
         
     }
 ?>
